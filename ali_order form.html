@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - Cookie ni Ali</title>
+    <style>
+          
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #F1C8C4;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #F1C8C4;
+        }
+
+	 
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+        }
+
+        
+        .header-image {
+            background-image: url('https://via.placeholder.com/1200x300'); 
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+        form {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #F1C8C4;
+            font-size: 1rem;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        
+        .heart-checkbox input[type="checkbox"],
+        .heart-checkbox input[type="radio"] {
+            display: none;
+        }
+
+        .heart-checkbox label {
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            padding-left: 35px;
+            line-height: 20px;
+        }
+
+        .heart-checkbox label:before {
+            content: '\2665'; 
+            font-size: 2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #F1C8C4;
+            transition: transform 0.2s ease;
+        }
+
+        .heart-checkbox input[type="checkbox"]:checked + label:before,
+        .heart-checkbox input[type="radio"]:checked + label:before {
+            transform: scale(1.2);
+            color: red;
+        }
+
+        
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+
+        .order-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #F1C8C4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .order-button:hover {
+            background-color: #e8a9a5;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="cookie.png" alt="Cookie ni Ali Logo">
+            Cookie ni Ali
+        </div>
+        <nav>
+            <a href="ali_homepage.html">Menu</a>
+            <a href="ali_about us.html">About Us</a>
+            <a href="ali_contacts.html">Contact</a>
+            <a href="ali_reviews.html">Ratings</a>
+            <a href="ali_order form.html">Order Form</a>
+
+        </nav>
+        
+    </header>
+
+    <form action="/submit_order" method="POST">
+        <h2>Order Form</h2>
+
+        <div class="form-group">
+            <label for="name">What's your name?</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">What's your email?</label>
+            <input type="email" id="email" name="email" placeholder="Your order confirmation will be sent here" required>
+        </div>
+
+        <div class="heart-checkbox">
+            <input type="checkbox" id="offers" name="offers">
+            <label for="offers">I'd like to receive shop offers and updates through email</label>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">What's your phone number? <br><span style="font-weight: normal;">No spam. For order purposes only</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="63+ 0905 123 4567" required>
+        </div>
+
+        <div class="form-group">
+            <label>How would you like to receive your order?</label>
+            <div class="options">
+                <div class="option heart-checkbox">
+                    <input type="radio" id="self-booking" name="delivery" value="self-booking" required>
+                    <label for="self-booking">Self-Booking</label>
+                </div>
+                <div class="option heart-checkbox">
+                    <input type="radio" id="pick-up" name="delivery" value="pick-up" required>
+                    <label for="pick-up">Pick Up</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Is this a gift for someone?</label>
+            <div class="options">
+                <div class="option heart-checkbox">
+                    <input type="radio" id="gift-yes" name="gift" value="yes">
+                    <label for="gift-yes">Yes</label>
+                </div>
+                <div class="option heart-checkbox">
+                    <input type="radio" id="gift-no" name="gift" value="no">
+                    <label for="gift-no">No</label>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="recipient-name">What's the recipient's name?</label>
+            <input type="text" id="recipient-name" name="recipient-name" placeholder="Recipient's name">
+        </div>
+
+        <div class="form-group">
+            <label for="recipient-phone">What's their phone number? (PH)</label>
+            <input type="tel" id="recipient-phone" name="recipient-phone" placeholder="63+ 0905 123 4567">
+        </div>
+
+        <div class="form-group">
+            <label for="gift-message">Type your gift message here, if any:</label>
+            <textarea id="gift-message" name="gift-message" placeholder="Write your message..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="special-request">Type your special request here, if any (note card, way of packing):</label>
+            <textarea id="special-request" name="special-request" placeholder="We pack all cookies together to avoid waste..."></textarea>
+            <p class="note">*Should you wish to have your goodies packed in a specific manner, please provide clear instructions.</p>
+        </div>
+
+        <div class="form-group">
+            <label for="instagram">Your Instagram @username <br><span style="font-weight: normal;">Please MAKE SURE this is correct as we may miss out on your proof of payment if not <br>*</span></label>
+            <input type="text" id="instagram" name="instagram" placeholder="@username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Complete address including EXACT blk/lot, brgy, and other details:</label>
+            <textarea id="address" name="address" placeholder="Enter your complete address..." required></textarea>
+            <p class="note">We need this in case your assigned rider can't contact you on the day and time of delivery.</p>
+        </div>
+
+        
+        <div class="form-group">
+            <label>Would you like to give a tip to Cookie ni Ali?</label>
+            <p>Your tip supports our team in preparing your order. We appreciate it!</p>
+            <div class="options">
+                <div class="option heart-checkbox">
+                    <input type="radio" id="tip-1" name="tip" value="1%">
+                    <label for="tip-1">1% - ₱0</label>
+                </div>
+                <div class="option heart-checkbox">
+                    <input type="radio" id="tip-5" name="tip" value="5%">
+                    <label for="tip-5">5% - ₱0</label>
+                </div>
+                <div class="option heart-checkbox">
+                    <input type="radio" id="tip-10" name="tip" value="10%">
+                    <label for="tip-10">10% - ₱0</label>
+                </div>
+                <div class="option heart-checkbox">
+                    <input type="radio" id="no-tip" name="tip" value="no-tip">
+                    <label for="no-tip">No tip</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="order-button">Submit Order</button>
+    </form>
+	<form action="redirect_successful.html" method="POST">
+
+</body>
+
+</html>
+
+ <footer>
+        <p>&copy; 2024 Cookie ni Ali. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+
+

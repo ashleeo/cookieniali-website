@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie ni Ali - Home</title>
+    <style>
+       
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+       
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #F1C8C4;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #F1C8C4;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 8px 15px;
+            border: 2px solid #F1C8C4;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-bar button {
+            background-color: #F1C8C4;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        
+        .intro {
+            text-align: center;
+            padding: 40px;
+            background-color: #F1C8C4;
+            color: white;
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+       
+        .menu {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .menu p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+
+        
+        .product-options {
+            margin-top: 15px;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .product-options label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .product-options select {
+            padding: 5px;
+            margin-right: 15px;
+            border-radius: 5px;
+            border: 2px solid #F1C8C4;
+        }
+
+        .menu-item button {
+            background-color: #F1C8C4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .order-form-button {
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        .order-form-button a {
+            text-decoration: none;
+            background-color: #F1C8C4;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .order-form-button a:hover {
+            background-color: #e8a9a5;
+        }
+
+        .cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #F1C8C4;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="cookie.png" alt="Cookie ni Ali Logo">
+            Cookie ni Ali
+        </div>
+        <nav>
+            <a href="ali_homepage.html">Menu</a>
+            <a href="ali_about us.html">About Us</a>
+            <a href="ali_contacts.html">Contact</a>
+            <a href="ali_reviews.html">Ratings</a>
+            <a href="ali_order form.html">Order Form</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search cookies...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <section class="intro">
+        <h1>Savor Joy in Every Bite!</h1>
+        <p>At Cookie ni Ali, every cookie is baked with love and passion. Our homemade treats are crafted to bring a smile with each bite.</p>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Menu</h2>
+        <p>Explore our delicious and freshly baked cookies, made with the finest ingredients to satisfy your cravings!</p>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="Classic.jpeg" alt="Classic Chocolate Chip Cookie">
+                <h3>Classic Chocolate Chip</h3>
+
+                
+                <div class="product-options">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="palm size">Palm size</option>
+                    </select>
+                </div>
+
+                
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="Hershey.jpeg" alt="Hershey’s Chocolate S'mores">
+                <h3>Hershey’s Chocolate S'mores</h3>
+
+               
+                <div class="product-options">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="palm size">Palm size</option>
+                    </select>
+                </div>
+
+                
+                <button>Add to Cart</button>
+            </div>
+ <div class="menu-item">
+                <img src="Brownie.jpeg" alt="Brownie S’mores">
+                <h3>Brownie S’mores</h3>
+
+                
+                <div class="product-options">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="palm size">Palm size</option>
+                    </select>
+                </div>
+
+                
+                <button>Add to Cart</button>
+            </div>
+
+
+         <div class="menu-item">
+                <img src="Biscoff.jpeg" alt="Biscoff with Chocolate Chips">
+                <h3>Biscoff with Chocolate Chips</h3>
+
+                
+                <div class="product-options">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="palm size">Palm size</option>
+                    </select>
+                </div>
+
+                
+                <button>Add to Cart</button>
+            </div>
+ <div class="menu-item">
+                <img src="Redvelvet.jpeg" alt="Red Velvet Cream Cheese Graham">
+                <h3>Red Velvet Cream Cheese Graham</h3>
+
+                
+                <div class="product-options">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="palm size">Palm size</option>
+                    </select>
+                </div>
+
+                
+                <button>Add to Cart</button>
+            </div>
+
+<div class="menu-item">
+                <img src="Matcha.jpeg" alt="Matcha Almond Cream Cheese">
+                <h3>Matcha Almond Cream Cheese</h3>
+
+                
+                <div class="product-options">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="palm size">Palm size</option>
+                    </select>
+                </div>
+
+                
+                <button>Add to Cart</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="order-form-button">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Basket</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #000000; 
+        }
+
+        .checkout-container {
+            margin-top: 50px;
+        }
+
+        .checkout-text {
+            font-size: 20px;
+            color: #F1C8C4; 
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .checkout-button {
+            width: 120px;
+            height: 120px;
+            background-color: #FFFFFF;
+            border: 4px solid #F1A7A1; 
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+            margin-top: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        .checkout-button:hover {
+            background-color: #F1A7A1; 
+            transform: scale(1.1);
+        }
+
+        .checkout-button:active {
+            background-color: #FF8C7B; 
+            border-color: #FF6B5F; 
+            transform: scale(0.95);
+        }
+
+        .checkout-icon {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-text">Check Out</div>
+        <button class="checkout-button" onclick="location.href='ali_order form.html'">
+            <img 
+                src="free-cookie-clip-art.png" 
+                alt="Cookie Icon" 
+                class="checkout-icon"
+	
+            >
+        </button>
+    </div>
+</body>
+</html>
+
+          
+    <footer>
+        <p>&copy; 2024 Cookie ni Ali. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Ratings - Cookie ni Ali</title>
+    <style>
+        
+	{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            margin: 20px;
+            border: 10px solid #F1C8C4;
+        }
+
+        
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #F1C8C4;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #F1C8C4;
+        }
+
+        
+        .product-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-item {
+            background-color: #fff;
+            margin: 15px;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+
+        .product-item img {
+            width: 100%;
+            aspect-ratio: 9 / 16; 
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .star-rating {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+       
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    
+    <header>
+	<div class="logo">
+            <img src="cookie.png" alt="Cookie ni Ali Logo">
+        </div>
+        <div class="logo">Cookie ni Ali</div>
+        <nav>
+           <a href="ali_homepage.html">Menu</a>
+            <a href="ali_about us.html">About Us</a>
+            <a href="ali_contacts.html">Contact</a>
+            <a href="ali_reviews.html">Ratings</a>
+            <a href="ali_order form.html">Order Form</a>
+        </nav>
+    </header>
+
+    
+    <section class="product-section">
+        <h1>Ratings</h1>
+        <div class="product-grid">
+            <!-- Loop of 14 Products -->
+            <div class="product-item">
+                <img src="review 1.PNG" alt="Product 1">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 2.PNG" alt="Product 2">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 3.PNG" alt="Product 3">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 4.PNG" alt="Product 4">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 5.PNG" alt="Product 5">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 6.PNG" alt="Product 6">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 7.PNG" alt="Product 7">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 8.PNG" alt="Product 8">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 9.PNG" alt="Product 9">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 10.PNG" alt="Product 10">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 11.PNG" alt="Product 11">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 12.PNG" alt="Product 12">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 13.PNG" alt="Product 13">
+                <div class="star-rating">★★★★★</div>
+            </div>
+            <div class="product-item">
+                <img src="review 14.PNG" alt="Product 14">
+                <div class="star-rating">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Cookie ni Ali. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
